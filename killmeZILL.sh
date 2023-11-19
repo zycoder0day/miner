@@ -1,0 +1,1 @@
+ps -e -o pid -o args | grep lolMiner | awk '{print $1}' | awk '{print "kill -9 "$1""}' | bash; 
